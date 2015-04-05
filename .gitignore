@@ -1,0 +1,17 @@
+*.exe
+Debug/microprocessorCPP.ilk
+*.pdb
+microprocessorCPP.opensdf
+*.sdf
+microprocessorCPP/microprocessorCPP.vcxproj
+*.filters
+*.user
+microprocessorCPP/geany_run_script.bat
+*.idb
+microprocessorCPP/Debug/micropro.492CE10D.tlog/microprocessorCPP.lastbuildstate
+*.log
+*.tlog
+microprocessorCPP/Debug/main.obj
+*.obj
+microprocessorCPP.v12.suo
+*.sln
