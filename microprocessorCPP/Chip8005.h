@@ -1,3 +1,6 @@
+#ifndef CHIP8005_HEADER
+#define CHIP8005_HEADER
+
 #include <iostream>
 #include <map>
 #include <string>
@@ -56,3 +59,5 @@ private:
 
     int codeWritePosition;
 };
+
+#endif
