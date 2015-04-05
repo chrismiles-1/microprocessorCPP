@@ -37,6 +37,7 @@ public:
     void MarkAddress(std::string tag, int address);
 
     void WriteCode(int code, bool hasArgument = false, int argument = 0);
+    void JumpWritePosition(std::string tag);
 
     //interprete the code in the code list
     void Interpret();

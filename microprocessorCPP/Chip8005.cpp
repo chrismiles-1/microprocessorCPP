@@ -80,7 +80,7 @@ void Chip8005::PrintR0AsChar() {
 void Chip8005::MarkNext(std::string tag) {
     tags[tag] = codeWritePosition;
 }
-//mark memory address, used for frames
+//mark memory address, used for frames and function positions
 void Chip8005::MarkAddress(std::string tag, int address) {
     tags[tag] = address;
 }
@@ -93,6 +93,10 @@ void Chip8005::WriteCode(int code, bool hasArgument, int argument) {
         codes[codeWritePosition] = argument;
         codeWritePosition++;
     }
+}
+
+void Chip8005::JumpWritePosition(std::string tag) {
+    codeWritePosition = tags[tag];
 }
 
 //interprete the code in the code list
